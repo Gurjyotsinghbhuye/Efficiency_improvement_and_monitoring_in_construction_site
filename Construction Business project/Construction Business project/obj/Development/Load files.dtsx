@@ -1,0 +1,2785 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/24/2024 10:58:22 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-BK822L27"
+  DTS:CreatorName="LAPTOP-BK822L27\karan"
+  DTS:DTSID="{1115CDD6-F837-4CC8-B7B3-370AE99CC3B4}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Load files"
+  DTS:PackageType="5"
+  DTS:VersionBuild="58"
+  DTS:VersionGUID="{E77B60A3-82AC-4FE1-8BA3-FB27DDAA6B54}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4BE66264-26B4-4C28-9884-B630EEF625AB}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Construction business\Archive\Projects.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProjectID"
+              DTS:DTSID="{4C4523FC-73FC-4EC4-A9A1-77A5404C7AC8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StartDate"
+              DTS:DTSID="{68052688-B54E-48AD-A52D-3EC0C9DB85C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EndDate"
+              DTS:DTSID="{EBC9A374-07D5-427B-9ABD-9ECAD1336E7B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalBudget"
+              DTS:DTSID="{757EB4E3-68F6-484F-9980-55FC29B4FBC7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="projectManagerFirstName"
+              DTS:DTSID="{2A71E9BC-5ECD-4E57-8C73-BCF8E9A45B32}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="projectManagerLastName"
+              DTS:DTSID="{5C317251-9F1A-4C33-876E-C0144E5352C8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="projectDetails"
+              DTS:DTSID="{78EDEF1F-C9A4-4C37-98E9-D5850B17C585}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{60DD7563-4D94-477F-9BE8-1F47606156E0}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Construction business\Archive\Materials.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProjectID"
+              DTS:DTSID="{91112706-3C63-43C8-9697-3C0657E0C25F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaterialID"
+              DTS:DTSID="{9855D203-A067-408D-AE75-4DC80781CAC8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Materialdetail"
+              DTS:DTSID="{52399C8A-9377-46BA-B6F8-B5F520B220B1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quantity"
+              DTS:DTSID="{C1F9F024-69C5-4B87-88F6-1CC6DB9CCBB3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="materialCost"
+              DTS:DTSID="{185D4FCA-251F-4D90-BC42-E541AB8F114D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PurchaseDate"
+              DTS:DTSID="{79AECC96-2317-4E76-A1A0-F06EA6F4174E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E02371C8-09D9-4CD8-9FD3-51FFB36E13A9}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Construction business\Archive\Employees.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmployeeID"
+              DTS:DTSID="{08CCA032-2DEC-421D-954D-F7F49BAA1B72}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmployeeName"
+              DTS:DTSID="{0A77E1D4-9F2C-4B40-A752-F0276936B36C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProjectID"
+              DTS:DTSID="{9970FF72-3023-4416-BA90-B680E4D381CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WorkDate"
+              DTS:DTSID="{07C4CF42-3F8E-492F-A714-6E50B2758AC9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="position"
+              DTS:DTSID="{C8EDB525-73EA-46FC-8E37-F623EC7125E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HoursWorked"
+              DTS:DTSID="{71D3803C-2902-4542-9162-BA5FE3949A53}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DailyWage"
+              DTS:DTSID="{D0920829-7422-4361-9744-91E4437A8CAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Attendance"
+              DTS:DTSID="{37412B91-D2BD-46C1-8F26-51DE151A97C5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-BK822L27\MSSQLSERVER01.construction]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A2042048-BD5B-4423-B58A-8F614A1E463C}"
+      DTS:ObjectName="LAPTOP-BK822L27\MSSQLSERVER01.construction">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-BK822L27\MSSQLSERVER01;Initial Catalog=construction;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Load files-{A2042048-BD5B-4423-B58A-8F614A1E463C}LAPTOP-BK822L27\MSSQLSERVER01.construction;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-BK822L27\MSSQLSERVER01.construction 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{EE624306-6BAD-48B5-A242-2ED21479149D}"
+      DTS:ObjectName="LAPTOP-BK822L27\MSSQLSERVER01.construction 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-BK822L27\MSSQLSERVER01;Initial Catalog=construction;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Load files-{EE624306-6BAD-48B5-A242-2ED21479149D}LAPTOP-BK822L27\MSSQLSERVER01.construction 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SMTP Connection Manager]"
+      DTS:CreationName="SMTP"
+      DTS:Description="Send file not found message"
+      DTS:DTSID="{97120427-FC97-4729-8189-E013D8573237}"
+      DTS:ObjectName="SMTP Connection Manager">
+      <DTS:ObjectData>
+        <SmtpConnectionManager
+          ConnectionString="SmtpServer=;UseWindowsAuthentication=True;EnableSsl=False;"
+          ConnectByProxy="False" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6C989B81-B4F2-411C-8662-90532C9A1192}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="checkVariable">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EB071A4B-A44B-4DF8-AB74-820B7B98099C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Filename">
+      <DTS:VariableValue
+        DTS:DataType="8">Projects</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{AEDA294D-A38A-4B32-A406-72ECE84F65E5}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FIleName1">
+      <DTS:VariableValue
+        DTS:DataType="8">Materials</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{17251AC4-1460-4F10-B241-B72D7DDA771C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Filename2">
+      <DTS:VariableValue
+        DTS:DataType="8">Employees</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{228E3033-E7D3-4C0C-94BC-02B9A0196812}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Filetype">
+      <DTS:VariableValue
+        DTS:DataType="8">.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9F1AC7BD-DE12-4945-A5EB-68C088A53367}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;D:\\Construction business\\Archive\\&quot;  +&quot;&quot;+(DT_WSTR, 4)DATEPART(&quot;yyyy&quot;, GetDate()) &#xA;+ RIGHT(&quot;0&quot; + (DT_WSTR, 2)DATEPART(&quot;mm&quot;, GetDate()), 2) &#xA;+ RIGHT(&quot;0&quot; + (DT_WSTR, 2)DATEPART(&quot;dd&quot;, GetDate()), 2) &#xA;+ &quot;_&quot; &#xA;+ RIGHT(&quot;0&quot; + (DT_WSTR, 2)DATEPART(&quot;hh&quot;, GetDate()), 2) &#xA;+ RIGHT(&quot;0&quot; + (DT_WSTR, 2)DATEPART(&quot;mi&quot;, GetDate()), 2) &#xA;+ RIGHT(&quot;0&quot; + (DT_WSTR, 2)DATEPART(&quot;ss&quot;, GetDate()), 2)+ @[User::Filetype]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="RenamingFile">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\Construction business\Archive\20240827_092611.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C9733995-59C6-4436-9308-491B6AD03322}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;D:\\Construction business\\Archive\\&quot; + @[User::Filename] + @[User::Filetype]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SourceFilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\Construction business\Archive\Projects.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D5BB85DD-BD6A-433E-9ECB-6FED39C40B99}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;D:\\Construction business\\Archive\\&quot; +  @[User::Filename2] + @[User::Filetype]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="sourcefilepathemps">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\Construction business\Archive\Employees.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{791259B0-C2C7-47C4-900D-D42E6C7EDAEE}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;D:\\Construction business\\Archive\\&quot; + @[User::FIleName1] + @[User::Filetype]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SourceFilepathMaterials">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\Construction business\Archive\Materials.csv</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\loading for Projects"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{20B454EF-4AB5-49D9-A679-CDC4B2BFDF7C}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="loading for Projects">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\loading for Projects\Check if file exists"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{9B3D2C19-C385-44D6-9EF2-CF5AC7C70E35}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Check if file exists"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::checkVariable]= @[User::Filename] == &quot;Projects&quot; ? 1 : 0" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\loading for Projects\File System Task"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{FB71D8A8-D65F-46D8-AF10-E88112A30594}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="File System Task"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="RenameFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="User::SourceFilePath"
+              TaskIsSourceVariable="True"
+              TaskDestinationPath="User::RenamingFile"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\loading for Projects\Load projects data"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{8FFA1D79-FD8F-4001-B310-BB040AC6F5BF}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Load projects data"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\loading for Projects\Load projects data\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\loading for Projects\Load projects data\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[ProjectID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProjectID]"
+                          length="50"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[ProjectID]"
+                          name="ProjectID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[StartDate]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[StartDate]"
+                          length="50"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[StartDate]"
+                          name="StartDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[EndDate]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EndDate]"
+                          length="50"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[EndDate]"
+                          name="EndDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[TotalBudget]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TotalBudget]"
+                          length="50"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[TotalBudget]"
+                          name="TotalBudget"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[projectManagerFirstName]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[projectManagerFirstName]"
+                          length="50"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[projectManagerFirstName]"
+                          name="projectManagerFirstName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[projectManagerLastName]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[projectManagerLastName]"
+                          length="50"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[projectManagerLastName]"
+                          name="projectManagerLastName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[projectName]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[projectDetails]"
+                          length="50"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[projectName]"
+                          name="projectName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProjectID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProjectID" />
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[StartDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="StartDate" />
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EndDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="EndDate" />
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TotalBudget]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TotalBudget" />
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[projectManagerFirstName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="projectManagerFirstName" />
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[projectManagerLastName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="projectManagerLastName" />
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[projectDetails]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="projectDetails" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\loading for Projects\Load projects data\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[Stage_projects]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\loading for Projects\Load projects data\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[LAPTOP-BK822L27\MSSQLSERVER01.construction]"
+                      connectionManagerRefId="Package.ConnectionManagers[LAPTOP-BK822L27\MSSQLSERVER01.construction]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProjectID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ProjectID"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProjectID]"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[ProjectID]" />
+                        <inputColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StartDate]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="StartDate"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartDate]"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[StartDate]" />
+                        <inputColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EndDate]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="EndDate"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EndDate]"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[EndDate]" />
+                        <inputColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TotalBudget]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="TotalBudget"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalBudget]"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[TotalBudget]" />
+                        <inputColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[projectManagerFirstName]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="projectManagerFirstName"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[projectManagerFirstName]"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[projectManagerFirstName]" />
+                        <inputColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[projectManagerLastName]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="projectManagerLastName"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[projectManagerLastName]"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[projectManagerLastName]" />
+                        <inputColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[projectName]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="projectName"
+                          externalMetadataColumnId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[projectName]"
+                          lineageId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output].Columns[projectName]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProjectID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProjectID" />
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartDate]"
+                          dataType="wstr"
+                          length="50"
+                          name="StartDate" />
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EndDate]"
+                          dataType="wstr"
+                          length="50"
+                          name="EndDate" />
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalBudget]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TotalBudget" />
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[projectManagerFirstName]"
+                          dataType="wstr"
+                          length="50"
+                          name="projectManagerFirstName" />
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[projectManagerLastName]"
+                          dataType="wstr"
+                          length="50"
+                          name="projectManagerLastName" />
+                        <externalMetadataColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[projectName]"
+                          dataType="wstr"
+                          length="50"
+                          name="projectName" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\loading for Projects\Load projects data\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\loading for Projects\Load projects data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\loading for Projects\Load projects data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\loading for Projects\Load projects data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\loading for Projects\Load projects data.Paths[Flat File Source Output]"
+                  endId="Package\loading for Projects\Load projects data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\loading for Projects\Load projects data\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\loading for Projects\Send Mail Task"
+          DTS:CreationName="Microsoft.SendMailTask"
+          DTS:Description="Sends failure message that file not found"
+          DTS:DTSID="{AC2A0485-150D-47A1-9A92-A46403FB272B}"
+          DTS:ExecutableType="Microsoft.SendMailTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Send Mail Task"
+          DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SendMailTask:SendMailTaskData
+              SendMailTask:SMTPServer="{97120427-FC97-4729-8189-E013D8573237}"
+              SendMailTask:From="singh.gurjyot123@gmail.com"
+              SendMailTask:To="singh.gurjyot123@gmail.com"
+              SendMailTask:Subject="construction business"
+              SendMailTask:Priority="High" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\loading for Projects.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{DD59621A-7F1F-448C-99B8-5BB24B2EB7F5}"
+          DTS:EvalOp="1"
+          DTS:Expression="@[User::checkVariable]==1"
+          DTS:From="Package\loading for Projects\Check if file exists"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\loading for Projects\Load projects data" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\loading for Projects.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{9124D79A-7050-4577-BEF2-06B419691FF3}"
+          DTS:From="Package\loading for Projects\Load projects data"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\loading for Projects\File System Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\loading for Projects.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{3F676ACA-68EB-4A48-8B14-8C07550C0F46}"
+          DTS:EvalOp="1"
+          DTS:Expression="@[User::checkVariable]==0"
+          DTS:From="Package\loading for Projects\Check if file exists"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\loading for Projects\Send Mail Task" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sequence for employees"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{064195f3-ca5d-41ea-9e79-5e20ca63bf2f}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence for employees">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence for employees\Check if file exists"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{4e6aa557-6421-4596-b831-9059b17ff2fa}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Check if file exists"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::checkVariable]= @[User::Filename2]  == &quot;Employees&quot; ? 1 : 0" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence for employees\File System Task"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{95d7d20f-aa87-4687-b055-40649e761941}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="File System Task"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="RenameFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="User::sourcefilepathemps"
+              TaskIsSourceVariable="True"
+              TaskDestinationPath="User::RenamingFile"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence for employees\Load employees data"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{b0533108-9e56-4062-b80c-90b553faa407}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Load employees data"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence for employees\Load employees data\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence for employees\Load employees data\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[ProjectID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProjectID]"
+                          length="50"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[ProjectID]"
+                          name="ProjectID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[EmployeeID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EmployeeID]"
+                          length="50"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[EmployeeID]"
+                          name="EmployeeID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[EmployeeName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EmployeeName]"
+                          length="50"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[EmployeeName]"
+                          name="EmployeeName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[WorkDate]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WorkDate]"
+                          length="50"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[WorkDate]"
+                          name="WorkDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[position]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[position]"
+                          length="50"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[position]"
+                          name="position"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[HoursWorked]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HoursWorked]"
+                          length="50"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[HoursWorked]"
+                          name="HoursWorked"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[DailyWage]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DailyWage]"
+                          length="50"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[DailyWage]"
+                          name="DailyWage"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[Attendance]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Attendance]"
+                          length="50"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[Attendance]"
+                          name="Attendance"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProjectID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProjectID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EmployeeID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="EmployeeID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EmployeeName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="EmployeeName" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WorkDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="WorkDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[position]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="position" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HoursWorked]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="HoursWorked" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DailyWage]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DailyWage" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Attendance]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Attendance" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence for employees\Load employees data\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[stage_employees]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[LAPTOP-BK822L27\MSSQLSERVER01.construction]"
+                      connectionManagerRefId="Package.ConnectionManagers[LAPTOP-BK822L27\MSSQLSERVER01.construction]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProjectID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ProjectID"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProjectID]"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[ProjectID]" />
+                        <inputColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EmployeeID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="EmployeeID"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeID]"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[EmployeeID]" />
+                        <inputColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EmployeeName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="EmployeeName"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeName]"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[EmployeeName]" />
+                        <inputColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WorkDate]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="WorkDate"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WorkDate]"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[WorkDate]" />
+                        <inputColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[HoursWorked]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="HoursWorked"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HoursWorked]"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[HoursWorked]" />
+                        <inputColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[position]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="position"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[position]"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[position]" />
+                        <inputColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Attendance]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Attendance"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Attendance]"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[Attendance]" />
+                        <inputColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DailyWage]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DailyWage"
+                          externalMetadataColumnId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DailyWage]"
+                          lineageId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output].Columns[DailyWage]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProjectID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProjectID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="EmployeeID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="EmployeeName" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WorkDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="WorkDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[position]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="position" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HoursWorked]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="HoursWorked" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DailyWage]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DailyWage" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Attendance]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Attendance" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence for employees\Load employees data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence for employees\Load employees data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence for employees\Load employees data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence for employees\Load employees data.Paths[Flat File Source Output]"
+                  endId="Package\Sequence for employees\Load employees data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Sequence for employees\Load employees data\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence for employees\Send Mail Task"
+          DTS:CreationName="Microsoft.SendMailTask"
+          DTS:Description="Sends failure message that file not found"
+          DTS:DTSID="{86683eca-4d7b-4721-9f04-68a709e2b32f}"
+          DTS:ExecutableType="Microsoft.SendMailTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Send Mail Task"
+          DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SendMailTask:SendMailTaskData
+              SendMailTask:SMTPServer="{97120427-FC97-4729-8189-E013D8573237}"
+              SendMailTask:From="singh.gurjyot123@gmail.com"
+              SendMailTask:To="singh.gurjyot123@gmail.com"
+              SendMailTask:Subject="construction business"
+              SendMailTask:Priority="High" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence for employees.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{8aa0f133-aa3a-4ae8-8514-2c4b15272261}"
+          DTS:EvalOp="1"
+          DTS:Expression="@[User::checkVariable]==1"
+          DTS:From="Package\Sequence for employees\Check if file exists"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence for employees\Load employees data" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence for employees.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{fc272a74-cc67-4981-80b5-be33ff2f6434}"
+          DTS:From="Package\Sequence for employees\Load employees data"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Sequence for employees\File System Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence for employees.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{e1e240a0-70a7-45b9-bfb7-1660331d5c79}"
+          DTS:EvalOp="1"
+          DTS:Expression="@[User::checkVariable]==0"
+          DTS:From="Package\Sequence for employees\Check if file exists"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Sequence for employees\Send Mail Task" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sequence for Material"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{B7EA9F39-1CED-463E-A483-2128966126CA}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence for Material">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence for Material\Check if file exists"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{29d102bf-40fa-4338-a277-621d4d5d408a}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Check if file exists"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::checkVariable]= @[User::FIleName1]  == &quot;Materials&quot; ? 1 : 0" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence for Material\File System Task"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{57d3fc26-64f4-4b6c-b087-ab7b1d129984}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="File System Task"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="RenameFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="User::SourceFilepathMaterials"
+              TaskIsSourceVariable="True"
+              TaskDestinationPath="User::RenamingFile"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence for Material\Load materials data"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{59b2f02b-ea7e-4750-909b-c756fc3ff16c}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Load materials data"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence for Material\Load materials data\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence for Material\Load materials data\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[ProjectID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProjectID]"
+                          length="50"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[ProjectID]"
+                          name="ProjectID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[MaterialID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MaterialID]"
+                          length="50"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[MaterialID]"
+                          name="MaterialID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[Materialdetail]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Materialdetail]"
+                          length="50"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[Materialdetail]"
+                          name="Materialdetail"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[Quantity]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Quantity]"
+                          length="50"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[Quantity]"
+                          name="Quantity"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[materialCost]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[materialCost]"
+                          length="50"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[materialCost]"
+                          name="materialCost"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[PurchaseDate]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PurchaseDate]"
+                          length="50"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[PurchaseDate]"
+                          name="PurchaseDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProjectID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProjectID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MaterialID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="MaterialID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Materialdetail]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Materialdetail" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Quantity]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Quantity" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[materialCost]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="materialCost" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PurchaseDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PurchaseDate" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence for Material\Load materials data\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[Stage_Materials]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[LAPTOP-BK822L27\MSSQLSERVER01.construction]"
+                      connectionManagerRefId="Package.ConnectionManagers[LAPTOP-BK822L27\MSSQLSERVER01.construction]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProjectID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ProjectID"
+                          externalMetadataColumnId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProjectID]"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[ProjectID]" />
+                        <inputColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MaterialID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="MaterialID"
+                          externalMetadataColumnId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaterialID]"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[MaterialID]" />
+                        <inputColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Materialdetail]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Materialdetail"
+                          externalMetadataColumnId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Materialdetail]"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[Materialdetail]" />
+                        <inputColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Quantity]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Quantity"
+                          externalMetadataColumnId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quantity]"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[Quantity]" />
+                        <inputColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[materialCost]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="materialCost"
+                          externalMetadataColumnId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[materialCost]"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[materialCost]" />
+                        <inputColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PurchaseDate]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="PurchaseDate"
+                          externalMetadataColumnId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PurchaseDate]"
+                          lineageId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output].Columns[PurchaseDate]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProjectID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProjectID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaterialID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="MaterialID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Materialdetail]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Materialdetail" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quantity]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Quantity" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[materialCost]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="materialCost" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PurchaseDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PurchaseDate" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence for Material\Load materials data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence for Material\Load materials data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence for Material\Load materials data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence for Material\Load materials data.Paths[Flat File Source Output]"
+                  endId="Package\Sequence for Material\Load materials data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Sequence for Material\Load materials data\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence for Material\Send Mail Task"
+          DTS:CreationName="Microsoft.SendMailTask"
+          DTS:Description="Sends failure message that file not found"
+          DTS:DTSID="{537ea1af-d297-4348-a8b8-b68f56236ee5}"
+          DTS:ExecutableType="Microsoft.SendMailTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Send Mail Task"
+          DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SendMailTask:SendMailTaskData
+              SendMailTask:SMTPServer="{97120427-FC97-4729-8189-E013D8573237}"
+              SendMailTask:From="singh.gurjyot123@gmail.com"
+              SendMailTask:To="singh.gurjyot123@gmail.com"
+              SendMailTask:Subject="construction business"
+              SendMailTask:Priority="High" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence for Material.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{cae60419-eebf-4506-89c1-3b37ea946a66}"
+          DTS:EvalOp="1"
+          DTS:Expression="@[User::checkVariable]==1"
+          DTS:From="Package\Sequence for Material\Check if file exists"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence for Material\Load materials data" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence for Material.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{c9d9a49e-7985-4bd2-b1d8-75f2d476a513}"
+          DTS:From="Package\Sequence for Material\Load materials data"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Sequence for Material\File System Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence for Material.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{5b0d7ff6-d59f-4e79-b86e-972319a48923}"
+          DTS:EvalOp="1"
+          DTS:Expression="@[User::checkVariable]==0"
+          DTS:From="Package\Sequence for Material\Check if file exists"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Sequence for Material\Send Mail Task" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{2897025F-8930-497E-9F2A-73A490EED226}"
+      DTS:From="Package\loading for Projects"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Sequence for Material" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{F928ABAD-EBF6-47C6-90AF-E5CDC0C2BA4E}"
+      DTS:From="Package\Sequence for Material"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Sequence for employees" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\loading for Projects\Check if file exists"
+          TopLeft="59.4333209943445,48.0666652865543" />
+        <NodeLayout
+          Size="158.4,41.6"
+          Id="Package\loading for Projects\File System Task"
+          TopLeft="77.7666533259885,257.799997161428" />
+        <NodeLayout
+          Size="164,41.6"
+          Id="Package\loading for Projects\Load projects data"
+          TopLeft="76.8666501843274,155.433332290716" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\loading for Projects\Send Mail Task"
+          TopLeft="251.099977188807,84.4666650334332" />
+        <EdgeLayout
+          Id="Package\loading for Projects.PrecedenceConstraints[Constraint]"
+          TopLeft="140.233320994344,89.6666652865543">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18.6333291899829,65.7666670041613"
+              Start="0,0"
+              End="18.6333291899829,58.2666670041613">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.8833335020807" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.8833335020807"
+                    Point2="0,32.8833335020807"
+                    Point3="4,32.8833335020807" />
+                  <mssgle:LineSegment
+                    End="14.6333291899829,32.8833335020807" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14.6333291899829,32.8833335020807"
+                    Point2="18.6333291899829,32.8833335020807"
+                    Point3="18.6333291899829,36.8833335020807" />
+                  <mssgle:LineSegment
+                    End="18.6333291899829,58.2666670041613" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="1.31666459499145,37.8833335020807,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\loading for Projects.PrecedenceConstraints[Constraint 1]"
+          TopLeft="157.916651755158,197.033332290716">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.7666648707119"
+              Start="0,0"
+              End="0,53.2666648707119">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.2666648707119" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\loading for Projects.PrecedenceConstraints[Constraint 2]"
+          TopLeft="221.033320994344,68.8666652865543">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="30.0666561944622,36.3999997468789"
+              Start="0,0"
+              End="22.5666561944622,36.3999997468789">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="11.0333280972311,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.0333280972311,0"
+                    Point2="15.0333280972311,0"
+                    Point3="15.0333280972311,4" />
+                  <mssgle:LineSegment
+                    End="15.0333280972311,32.3999997468789" />
+                  <mssgle:CubicBezierSegment
+                    Point1="15.0333280972311,32.3999997468789"
+                    Point2="15.0333280972311,36.3999997468789"
+                    Point3="19.0333280972311,36.3999997468789" />
+                  <mssgle:LineSegment
+                    End="22.5666561944622,36.3999997468789" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="7.03332809723108,-22,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="405.6,373.6"
+          Size="405.6,416.8"
+          Id="Package\loading for Projects"
+          TopLeft="126.666659745906,42.4666663713589" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Sequence for employees\Check if file exists"
+          TopLeft="117.928555369023,36.3904721155718" />
+        <NodeLayout
+          Size="158.4,41.6"
+          Id="Package\Sequence for employees\File System Task"
+          TopLeft="154.119029582139,218.88570894176" />
+        <NodeLayout
+          Size="177.6,41.6"
+          Id="Package\Sequence for employees\Load employees data"
+          TopLeft="153.219026440478,116.519044071048" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Sequence for employees\Send Mail Task"
+          TopLeft="327.452353444957,45.5523768137657" />
+        <EdgeLayout
+          Id="Package\Sequence for employees.PrecedenceConstraints[Constraint]"
+          TopLeft="198.728555369023,77.9904721155718">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="43.290471071455,38.5285719554762"
+              Start="0,0"
+              End="43.290471071455,31.0285719554762">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.2642859777381" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.2642859777381"
+                    Point2="0,19.2642859777381"
+                    Point3="4,19.2642859777381" />
+                  <mssgle:LineSegment
+                    End="39.290471071455,19.2642859777381" />
+                  <mssgle:CubicBezierSegment
+                    Point1="39.290471071455,19.2642859777381"
+                    Point2="43.290471071455,19.2642859777381"
+                    Point3="43.290471071455,23.2642859777381" />
+                  <mssgle:LineSegment
+                    End="43.290471071455,31.0285719554762" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="13.6452355357275,24.2642859777381,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence for employees.PrecedenceConstraints[Constraint 1]"
+          TopLeft="242.019026440478,158.119044071048">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.69999685833898,60.766664870712"
+              Start="0,0"
+              End="-8.69999685833898,53.266664870712">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.383332435356" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.383332435356"
+                    Point2="0,30.383332435356"
+                    Point3="-4,30.383332435356" />
+                  <mssgle:LineSegment
+                    End="-4.69999685833898,30.383332435356" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.69999685833898,30.383332435356"
+                    Point2="-8.69999685833898,30.383332435356"
+                    Point3="-8.69999685833898,34.383332435356" />
+                  <mssgle:LineSegment
+                    End="-8.69999685833898,53.266664870712" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence for employees.PrecedenceConstraints[Constraint 2]"
+          TopLeft="279.528555369023,57.1904721155718">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="47.9237980759336,9.16190469819389"
+              Start="0,0"
+              End="40.4237980759336,9.16190469819389">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="19.9618990379668,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="19.9618990379668,0"
+                    Point2="23.9618990379668,0"
+                    Point3="23.9618990379668,4" />
+                  <mssgle:LineSegment
+                    End="23.9618990379668,5.16190469819389" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.9618990379668,5.16190469819389"
+                    Point2="23.9618990379668,9.16190469819389"
+                    Point3="27.9618990379668,9.16190469819389" />
+                  <mssgle:LineSegment
+                    End="40.4237980759336,9.16190469819389" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="15.9618990379668,-22,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="594.4,315.2"
+          Size="594.4,358.4"
+          Id="Package\Sequence for employees"
+          TopLeft="126.666659745906,924.533329813745" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Sequence for Material\Check if file exists"
+          TopLeft="117.928555369023,36.3904721155718" />
+        <NodeLayout
+          Size="158.4,41.6"
+          Id="Package\Sequence for Material\File System Task"
+          TopLeft="154.119029582139,218.88570894176" />
+        <NodeLayout
+          Size="169.6,41.6"
+          Id="Package\Sequence for Material\Load materials data"
+          TopLeft="153.219026440478,116.519044071048" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Sequence for Material\Send Mail Task"
+          TopLeft="327.452353444957,45.5523768137657" />
+        <EdgeLayout
+          Id="Package\Sequence for Material.PrecedenceConstraints[Constraint]"
+          TopLeft="198.728555369023,77.9904721155718">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="39.290471071455,38.5285719554762"
+              Start="0,0"
+              End="39.290471071455,31.0285719554762">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.2642859777381" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.2642859777381"
+                    Point2="0,19.2642859777381"
+                    Point3="4,19.2642859777381" />
+                  <mssgle:LineSegment
+                    End="35.290471071455,19.2642859777381" />
+                  <mssgle:CubicBezierSegment
+                    Point1="35.290471071455,19.2642859777381"
+                    Point2="39.290471071455,19.2642859777381"
+                    Point3="39.290471071455,23.2642859777381" />
+                  <mssgle:LineSegment
+                    End="39.290471071455,31.0285719554762" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="11.6452355357275,24.2642859777381,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence for Material.PrecedenceConstraints[Constraint 1]"
+          TopLeft="235.669028011309,158.119044071048">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.766664870712"
+              Start="0,0"
+              End="0,53.266664870712">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.266664870712" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence for Material.PrecedenceConstraints[Constraint 2]"
+          TopLeft="279.528555369023,57.1904721155718">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="47.9237980759336,9.16190469819389"
+              Start="0,0"
+              End="40.4237980759336,9.16190469819389">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="19.9618990379668,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="19.9618990379668,0"
+                    Point2="23.9618990379668,0"
+                    Point3="23.9618990379668,4" />
+                  <mssgle:LineSegment
+                    End="23.9618990379668,5.16190469819389" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.9618990379668,5.16190469819389"
+                    Point2="23.9618990379668,9.16190469819389"
+                    Point3="27.9618990379668,9.16190469819389" />
+                  <mssgle:LineSegment
+                    End="40.4237980759336,9.16190469819389" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="15.9618990379668,-22,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="482.4,265.6"
+          Size="482.4,308.8"
+          Id="Package\Sequence for Material"
+          TopLeft="175.376263391353,555.347620871985" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="329.466659745906,459.266666371359">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="87.1096036454467,96.0809545006261"
+              Start="0,0"
+              End="87.1096036454467,88.5809545006261">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.0404772503131" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,44.0404772503131"
+                    Point2="0,48.0404772503131"
+                    Point3="4,48.0404772503131" />
+                  <mssgle:LineSegment
+                    End="83.1096036454467,48.0404772503131" />
+                  <mssgle:CubicBezierSegment
+                    Point1="83.1096036454467,48.0404772503131"
+                    Point2="87.1096036454467,48.0404772503131"
+                    Point3="87.1096036454467,52.0404772503131" />
+                  <mssgle:LineSegment
+                    End="87.1096036454467,88.5809545006261" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="420.221461568629,864.147620871985">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.38570894176"
+              Start="0,0"
+              End="0,52.88570894176">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.88570894176" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\loading for Projects\Load projects data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\loading for Projects\Load projects data\OLE DB Destination"
+          TopLeft="333.999995023012,233.999996513128" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\loading for Projects\Load projects data\Flat File Source"
+          TopLeft="287.999995708466,127.999998092651" />
+        <EdgeLayout
+          Id="Package\loading for Projects\Load projects data.Paths[Flat File Source Output]"
+          TopLeft="363.599995708466,169.599998092651">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="55.9999993145466,64.3999984204769"
+              Start="0,0"
+              End="55.9999993145466,56.8999984204769">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.1999992102385" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.1999992102385"
+                    Point2="0,32.1999992102385"
+                    Point3="4,32.1999992102385" />
+                  <mssgle:LineSegment
+                    End="51.9999993145466,32.1999992102385" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.9999993145466,32.1999992102385"
+                    Point2="55.9999993145466,32.1999992102385"
+                    Point3="55.9999993145466,36.1999992102385" />
+                  <mssgle:LineSegment
+                    End="55.9999993145466,56.8999984204769" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\loading for Projects\Load projects data\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence for employees\Load employees data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Sequence for employees\Load employees data\Flat File Source"
+          TopLeft="287.999995708466,127.999998092651" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Sequence for employees\Load employees data\OLE DB Destination"
+          TopLeft="333.999995023012,233.999996513128" />
+        <EdgeLayout
+          Id="Package\Sequence for employees\Load employees data.Paths[Flat File Source Output]"
+          TopLeft="363.599995708466,169.599998092651">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="55.9999993145466,64.3999984204769"
+              Start="0,0"
+              End="55.9999993145466,56.8999984204769">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.1999992102385" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.1999992102385"
+                    Point2="0,32.1999992102385"
+                    Point3="4,32.1999992102385" />
+                  <mssgle:LineSegment
+                    End="51.9999993145466,32.1999992102385" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.9999993145466,32.1999992102385"
+                    Point2="55.9999993145466,32.1999992102385"
+                    Point3="55.9999993145466,36.1999992102385" />
+                  <mssgle:LineSegment
+                    End="55.9999993145466,56.8999984204769" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence for employees\Load employees data\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence for Material\Load materials data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Sequence for Material\Load materials data\Flat File Source"
+          TopLeft="287.999995708466,127.999998092651" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Sequence for Material\Load materials data\OLE DB Destination"
+          TopLeft="333.999995023012,233.999996513128" />
+        <EdgeLayout
+          Id="Package\Sequence for Material\Load materials data.Paths[Flat File Source Output]"
+          TopLeft="363.599995708466,169.599998092651">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="55.9999993145466,64.3999984204769"
+              Start="0,0"
+              End="55.9999993145466,56.8999984204769">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.1999992102385" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.1999992102385"
+                    Point2="0,32.1999992102385"
+                    Point3="4,32.1999992102385" />
+                  <mssgle:LineSegment
+                    End="51.9999993145466,32.1999992102385" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.9999993145466,32.1999992102385"
+                    Point2="55.9999993145466,32.1999992102385"
+                    Point3="55.9999993145466,36.1999992102385" />
+                  <mssgle:LineSegment
+                    End="55.9999993145466,56.8999984204769" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence for Material\Load materials data\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
